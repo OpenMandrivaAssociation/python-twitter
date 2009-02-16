@@ -1,6 +1,6 @@
 %define name python-twitter
 %define version 0.5
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Python bingings for Twitter
 Name: %{name}
@@ -30,7 +30,8 @@ easier for python programmers to use.
 
 %install
 rm -rf %{buildroot}
-%{__python} setup.py install -O1 --skip-build --root %{buildroot} --install-purelib=%py_platsitedir
+%{__python} setup.py install -O1 --skip-build --root %{buildroot} --install-purelib=%{py_platsitedir}
+chmod a+r %{buildroot}%{py_platsitedir}/*/*
 
 %clean
 rm -rf %{buildroot}
