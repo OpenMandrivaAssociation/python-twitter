@@ -1,18 +1,18 @@
-%define name python-twitter
-%define version 0.5
-%define release %mkrel 3
+%define name	python-twitter
+%define version 0.6
+%define release %mkrel 1
 
-Summary: Python bingings for Twitter
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://python-twitter.googlecode.com/files/%{name}-%{version}.tar.gz
-License: ASL 2.0
-Group: Development/Python
-Url: http://code.google.com/p/python-twitter/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: python-setuptools
-Requires: python-simplejson
+Summary:	Python bingings for Twitter
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
+Source0:	http://python-twitter.googlecode.com/files/%{name}-%{version}.tar.gz
+License:	ASL 2.0
+Group:		Development/Python
+Url:		http://code.google.com/p/python-twitter/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	python-setuptools
+Requires:	python-simplejson
 
 %description
 This library provides a pure python interface for the Twitter API.
