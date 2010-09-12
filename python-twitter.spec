@@ -1,18 +1,18 @@
 %define name	python-twitter
-%define version 0.6
+%define version 1.4.2
 %define release %mkrel 1
 
 Summary:	Python bingings for Twitter
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	http://python-twitter.googlecode.com/files/%{name}-%{version}.tar.gz
 License:	ASL 2.0
 Group:		Development/Python
-Url:		http://code.google.com/p/python-twitter/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Url:		http://pypi.python.org/pypi/twitter
+Source0:	http://pypi.python.org/packages/source/t/twitter/twitter-%{version}.tar.gz
 BuildRequires:	python-setuptools
 Requires:	python-simplejson
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This library provides a pure python interface for the Twitter API.
@@ -23,7 +23,7 @@ via the web, IM, and SMS. Twitter exposes a web services API
 easier for python programmers to use. 
 
 %prep
-%setup -q
+%setup -q -n twitter-%{version}
 
 %build
 %{__python} setup.py build
@@ -39,3 +39,5 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{py_platsitedir}/*
+%{_bindir}/twitter
+%{_bindir}/twitterbot
