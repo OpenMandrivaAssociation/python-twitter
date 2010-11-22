@@ -1,6 +1,6 @@
 %define name	python-twitter
 %define version 1.4.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Python bingings for Twitter
 Name:		%{name}
