@@ -1,6 +1,6 @@
 %define name	python-twitter
 %define version 0.6
-%define release %mkrel 1
+%define release 2
 
 Summary:	Python bindings for Twitter
 Name:		%{name}
