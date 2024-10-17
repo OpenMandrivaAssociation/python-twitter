@@ -4,7 +4,7 @@ Version:	1.18.0
 Release:	1
 License:	ASL 2.0
 Group:		Development/Python
-Url:		http://code.google.com/p/python-twitter/
+Url:		https://code.google.com/p/python-twitter/
 Source0:	https://files.pythonhosted.org/packages/8a/9d/cea0ec784ba05d56fbd8a56a674ca12d9b012487528ce91e0064b19224f7/twitter-1.18.0.tar.gz
 BuildRequires:	python-setuptools
 Requires:	python-simplejson
